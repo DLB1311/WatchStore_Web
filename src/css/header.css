@@ -1,0 +1,86 @@
+header {
+    position: fixed; /* Không bị ảnh hưởng bởi phần content bên dưới */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* background-color: rgba(0, 0, 0, 0.082); */
+    background-color: black;
+    padding: 0 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    transition: all .3s ease;
+
+  }
+  .scroll-up {
+    top: 0;
+  }
+  .scroll-down {
+    top: -50px;
+    
+  }
+  /* #header.scroll-top {
+    background-color: white;
+  } */
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .header-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .vertical-divider {
+    height: 50px;
+    border-left: 1px solid black;
+  }
+
+  .header-button-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    
+  }
+
+  .header-button:hover {
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.932);
+    
+  }
+  .header-button:hover .header-button-text {
+    color: rgba(255, 255, 255, 0.932);
+  }
+  .header-button:hover .logo img  {
+    opacity:0.932 ;
+  }
+
+ 
