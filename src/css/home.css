@@ -1,0 +1,350 @@
+html{
+	scroll-behavior: smooth;
+}
+
+/* -------------------------------------------------------begin:slider---------------------------------- */
+#slider{
+    height: 100vh;
+	/* background:url('/public/img/adv.png') center / cover no-repeat   ; */
+	position: relative;
+	width: 100%;
+	text-shadow: 0 0 1px #000;
+
+}
+
+#slider .text-content{
+	position:absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+#slider .text-heading{
+	font-weight: 500;
+	font-size: 24px ;
+}
+
+#slider .btn-down-list{
+	font-size: 15px ;
+	text-decoration: none;
+	color: white;
+	
+}
+
+.text-content {
+		animation: colorchange 1s linear infinite;
+}
+	  
+@keyframes colorchange {
+0% {
+	color: rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+50% {
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+100% {
+	color: rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+}
+
+.arrows {
+width: 20px;
+height: 24px;
+margin-top: 5px;
+}
+	
+.arrows path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+#list-of-watches {
+    transition: all 0.5s ease-in-out;
+	-webkit-transition: .25s ease-in-out;
+}
+/* -------------------------------------------------------end:slider---------------------------------- */
+
+/* -------------------------------------------------------begin:listwatch---------------------------------- */
+#watch-showcase{
+	height: 100vh;
+	background-color: #171717;
+	padding-top: 70px;
+	padding-right: 22px;
+	padding-left: 22px;
+	position: relative;
+	border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+	
+}
+
+.title-list-watch{
+	margin-left: calc(5% + 1.1px);
+	margin-bottom: 30px;
+	color: white;
+	font-family: Gotham;
+	letter-spacing: .125rem;
+    font-size: 2.5rem;
+    line-height: 1.125;
+}
+
+.slider-wrapper {
+	margin-top: 90px;
+	padding: 30px;
+	height: 50vh;
+}
+.slick-list {
+	height: 73.5vh;
+
+}
+.slick-slider .slick-track, .slick-slider .slick-list {
+    margin-top: 10px;
+}
+.watch{
+	text-align: center;
+	height: 430px;
+    flex-direction: column;
+	display: flex;
+	transition: .75s ease-in-out;
+	opacity: 1;
+  }
+
+.watch:hover img{
+	transform: scale(1.2);
+}
+
+.watch:hover .watch-title::before{
+	margin-top: 60px;
+}
+
+.watches:hover .watch:not(:hover){
+	opacity: 0.35;
+}
+.slick-slide div{
+	  margin: 1rem;
+}
+
+.slider-wrapper img {
+	width: auto;
+	height: 100%;
+	max-width: 100%;
+	transition: .75s ease-in-out;
+  }
+
+.slick-slide img {
+    display: inline-block !important;
+	
+}
+
+.watch:focus-visible{
+	outline: none;
+}
+
+.watch .watch-title::before{
+	content: " ";
+	border-bottom: 2px solid #C09E57;
+	display: block;
+	max-width: 36px;
+	margin: 20px auto 0 auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	transition: .5s ease-in-out;
+}
+
+.watch .watch-title{
+	color: white;
+}
+/* -------------------------------------------------------end:listwatch---------------------------------- */
+  
+/* -------------------------------------------------------begin:listwatchnewest---------------------------------- */
+
+#new-watch-showcase{
+	height: 100vh;
+	background-color: white;
+	padding-top: 70px;
+	padding-right: 30px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.slider-wrapper-wl{
+		margin-top: 90px;
+		padding: 0px 10vh 0 10vh;
+		/* padding: 30px; */
+		height: 75vh;
+		
+}
+
+.slider-wrapper-wl img {
+	width: auto;
+	height: 100%;
+	max-width: 100%;
+	transition: .75s ease-in-out;
+  }
+
+.watchlatest{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	height: 50vh;
+	transition: opacity .75s ease-in-out;
+	opacity: 1;
+
+}
+
+.watchlatest:hover img{
+	transform: scale(1.2);
+	margin-bottom: 30px;
+}
+
+
+.watches:hover .watchlatest:not(:hover){
+	opacity: 0.35;
+}
+
+.watches .watches-link:not(:first-child) {
+	display: none;
+  }
+  .watches-link{
+	  text-decoration: none;
+  }
+
+.watchlatest .watch-latest-title::before{
+	content: " ";
+	border-bottom: 5px solid #C09E57;
+	display: block;
+	max-width: 26px;
+	margin: 20px auto 0 auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	transition: 3s ease-in-out;
+	animation: s;
+	
+}
+
+
+.watchlatest:hover .watch-latest-title::before{
+	transform:  scaleX(3);
+	opacity: 0.1;
+}
+
+
+@keyframes stretch {
+	0% {
+	  transform: scaleX(0.5);
+	}
+	50% {
+	  transform: scaleX(1.5);
+	}
+	100% {
+	  transform: scaleX(2);
+	}
+}
+
+.watch-latest-title{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 1.5rem;
+	color: black;
+	
+}
+
+
+/* -------------------------------------------------------end:listwatchnewest---------------------------------- */
+
+.cl-subcollections__gutter {
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+	
+	background-color: #171717;
+
+  }
+  .cl-subcollections__appointment {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 40px 0;
+  }
+  
+.cl-subcollections__button {
+    color: #171717;
+    text-decoration: none;
+}
+  
+.cl-subcollections__button.button {
+    font-family: Gotham,Arial,sans-serif;
+    font-size: .75rem;
+    line-height: 1.66667;
+    letter-spacing: .09375rem;
+    position: relative;
+    width: 100%;
+    padding: 16px 15px;
+    overflow-x: hidden;
+    color: #171717;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.cl-subcollections__button.button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 0;
+    height: 100%;
+    content: "";
+    background-color: #171717;
+    opacity: .1;
+    transition: width .7s;
+}
+
+.cl-subcollections__button.button:hover:before {
+    width: 100%;
+}
+
+  
+  @media (min-width: 1024px){
+  .cl-subcollections__appointment {
+	  padding-top: 95px;
+  }}

@@ -25,6 +25,7 @@ const Signin = () => {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = { phone, password };
@@ -50,7 +51,7 @@ const Signin = () => {
           })
             .then(() => {
               // Chuyển hướng đến trang đăng nhập
-              window.location.href = '/bskwatchofficial/signin';
+              window.location.href = '/bskwatchofficial/home';
           });
               
           setErrorMessage(response.data.customer.name);
@@ -70,6 +71,7 @@ const Signin = () => {
 
   return (
     <div class="form-account">
+      <div class="header-color"></div>
       <Header />
       <div class="form">
         <div class="account-container" >

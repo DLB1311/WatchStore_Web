@@ -11,9 +11,9 @@ header {
     background-color: black;
     padding: 0 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.616) ;
     transition: all .3s ease;
-
+    z-index: 2;
   }
   .scroll-up {
     top: 0;
@@ -22,9 +22,10 @@ header {
     top: -50px;
     
   }
-  /* #header.scroll-top {
-    background-color: white;
-  } */
+  #header.scroll-top {
+    background-color: transparent;
+  }
+
   .header-left {
     display: flex;
     align-items: center;
