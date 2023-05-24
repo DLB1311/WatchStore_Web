@@ -84,4 +84,13 @@ header {
     opacity:0.932 ;
   }
 
- 
+  @media (max-width: 1300px) {
+    .header-button {
+      padding: 0 30px;
+    }
+  }  
+  @media (max-width: 600px) {
+    .header-button {
+      padding: 0 0px;
+    }
+  }

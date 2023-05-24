@@ -344,7 +344,21 @@ margin-top: 5px;
 }
 
   
-  @media (min-width: 1024px){
+
+@media (min-width: 1024px){
   .cl-subcollections__appointment {
 	  padding-top: 95px;
-  }}
+  }
+} 
+@media (max-width: 1300px) {
+	.watchlatest{
+		height: 35vh ;
+	
+	}
+	.watch{
+		height: 200px;
+	}
+	.watch .watch-title {
+		font-size: initial;
+	}
+}
