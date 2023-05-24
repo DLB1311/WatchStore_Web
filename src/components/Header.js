@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../css/header.css';
 import { Link } from 'react-router-dom';
 import API from '../services/api';
+import urlImg from '../services/urlImg';
 
 const Header = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
@@ -70,7 +71,7 @@ const Header = () => {
         <Link to="/home" class="header-button">
           <div className="logo">
 
-            <img src="/img/logo-bsk.png" alt="Logo" />
+            <img  src={urlImg + "logo-bsk.png"} alt="Logo" />
 
             <span class="header-button-text">BSK Watch Official</span>
           </div>

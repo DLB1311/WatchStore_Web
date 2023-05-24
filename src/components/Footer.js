@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import ScrollToTop from '../utils/scrolltotop';
-
+import urlImg from '../services/urlImg';
 
 const Footer = () => {
   const [isNavTopVisible, setIsNavTopVisible] = useState(false);
@@ -31,7 +31,7 @@ const Footer = () => {
       <ScrollToTop />
       <div class="footer__content">
         <div class="footer__logo">
-          <img src="/img/logo-bsk.png" class="lazyloaded footer__logo_img" alt="logo"/>
+          <img src={urlImg + "logo-bsk.png"}  class="lazyloaded footer__logo_img" alt="logo"/>
         </div>
         <ul class="footer__main_nav">
 

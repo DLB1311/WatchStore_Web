@@ -241,7 +241,7 @@ const Order = () => {
                                             <div class="AM4Cxf">
                                                 <div class="EOjXew">
 
-                                                    <button class={`button button-dark js_make_appointment_btn js_ma_watch_button ${order.status === 3 ? 'disabled' : ''}`} onClick={() => handleCancelOrder(order._id)} disabled={order.status === 3}>Cancel</button>
+                                                    <button class={`button button-dark js_make_appointment_btn js_ma_watch_button ${order.status === 3 || order.status === 4  ? 'disabled' : ''}`} onClick={() => handleCancelOrder(order._id)} disabled={order.status === 3}>Cancel</button>
                                                     <button class="cl-subcollections__button button">Contact us</button>
 
                                                 </div>
