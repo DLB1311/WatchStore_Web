@@ -84,7 +84,7 @@ header {
     opacity:0.932 ;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     .header-button {
       padding: 0 30px;
     }
