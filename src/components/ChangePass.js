@@ -80,7 +80,7 @@ const ChangePass = () => {
             }
             const updatedCustomer = { ...customer, password: confirmPassword };
 
-            const response = await API.post('/account/update-profile', updatedCustomer, {
+            const response = await API.put('/account/update-profile', updatedCustomer, {
                 headers: { Authorization: `Bearer ${token}` },
             });
 

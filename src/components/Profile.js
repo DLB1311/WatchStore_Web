@@ -64,7 +64,7 @@ const Profile = () => {
         try {
             const customerData = { ...customer };
             delete customerData.password;
-            const response = await API.post('/account/update-profile', customerData , {
+            const response = await API.put('/account/update-profile', customerData , {
                 headers: { Authorization: `Bearer ${token}` },
 
             });
